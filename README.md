@@ -123,7 +123,4 @@ deterministic re-check).
 
 ## Notes
 
-- Do not commit real API keys.
-- The reports are LLM-generated and still need human review, especially for citations, numbers
-  and causal claims.
 - AutoGen and model services change over time; pin the dependency versions in `requirements.txt`.
