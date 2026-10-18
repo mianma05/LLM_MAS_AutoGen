@@ -1,0 +1,10 @@
+{
+  "kind": "basic",
+  "topic": "LLM-assisted PLC code generation and industrial automation programming",
+  "settings": {
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "max_tokens": 1800,
+    "temperature": 0.2
+  }
+}

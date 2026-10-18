@@ -1,0 +1,140 @@
+{
+  "S1": {
+    "title": "Agents4PLC: Automating Closed-loop PLC Code Generation and Verification",
+    "year": 2024,
+    "authors": "Agents4PLC authors",
+    "summary_cn": "用检索、规划、编码、验证和调试 Agent 构成 PLC 代码生成与验证闭环。",
+    "keywords": "PLC code generation verification LLM agents industrial control",
+    "url": "https://arxiv.org/abs/2410.14209",
+    "source_type": "课程资料库",
+    "citation_id": "S1"
+  },
+  "S2": {
+    "title": "AFlow: Automating Agentic Workflow Generation",
+    "year": 2024,
+    "authors": "Zhang et al.",
+    "summary_cn": "将 Agent 工作流表示为可搜索结构，并利用执行反馈自动改进工作流。",
+    "keywords": "agentic workflow search execution feedback",
+    "url": "https://arxiv.org/abs/2410.10762",
+    "source_type": "课程资料库",
+    "citation_id": "S2"
+  },
+  "S3": {
+    "title": "GPTSwarm: Language Agents as Optimizable Graphs",
+    "year": 2024,
+    "authors": "Zhuge et al.",
+    "summary_cn": "把语言 Agent 表示为可组合、可优化的图结构，研究节点和连接的优化。",
+    "keywords": "GPTSwarm language agents graph optimization",
+    "url": "https://arxiv.org/abs/2402.16823",
+    "source_type": "课程资料库",
+    "citation_id": "S3"
+  },
+  "S4": {
+    "title": "Model Context Protocol: What is MCP?",
+    "year": 2025,
+    "authors": "Model Context Protocol authors",
+    "summary_cn": "介绍连接 AI 应用与外部数据源、资源和工具的开放协议。",
+    "keywords": "MCP tools data resources protocol",
+    "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+    "source_type": "课程资料库",
+    "citation_id": "S4"
+  },
+  "S5": {
+    "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+    "year": 2023,
+    "authors": "Hong et al.",
+    "summary_cn": "提出面向软件开发的多智能体框架，用角色分工和结构化产物组织协作流程。",
+    "keywords": "LLM multi-agent framework roles software development workflow",
+    "url": "https://arxiv.org/abs/2308.00352",
+    "source_type": "课程资料库",
+    "citation_id": "S5"
+  },
+  "S6": {
+    "title": "Applied Industrial Automation with Delta PLC: Programming, Ladder Logic, and Control Systems",
+    "year": 2025,
+    "authors": "T. Jones Daniel, J. Bercy Miraclin",
+    "summary_cn": "This book is a journey into the world of technology, a journey designed for every higher secondary student who believes that education is power and a tool to spread equality. In an era where technology shapes our future, understanding the foundational concepts of Automation, Mechatronics, IoT, Information Technology, AI, and Machine Learning is not merely an advantage – it is an imperative. This book aims to equip you with that understanding, opening doors to innovation and opportunity for everyone.  Practical knowledge is emphasized in this book. It is built on the principle that true learning comes from \"doing\" rather than just passively receiving information. You'll find explanations coupled with practically executed examples, designed to foster a deeper and more intuitive understanding of complex concepts. The goal is to make this material accessible by breaking down potentially intimidating topics into manageable and engaging learning experiences.  Whether your ambition lies in designing intelligent systems, building robotic marvels, or simply understanding the digital world around you, this book provides a solid foundation. The hope is that through these pages, readers will gain valuable knowledge and discover the passion and potential that lies within the ever-evolving world of technology, becoming empowered to shape a more equitable and technologically advanced future for all.",
+    "url": "https://doi.org/10.70593/978-93-7185-999-8",
+    "doi": "10.70593/978-93-7185-999-8",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM-assisted industrial automation programming ladder logic generation",
+    "citation_id": "S6"
+  },
+  "S7": {
+    "title": "Automation Simplified: The Power of PLC Ladder Logic in Industrial Control Systems",
+    "year": 2025,
+    "authors": "Mark Louie Morelos",
+    "summary_cn": "&lt;br&gt; &lt;div&gt;  &lt;br&gt; &lt;/div&gt; &lt;div&gt;  In the era of Industry 4.0, automation has become the backbone of modern industrial processes, enabling efficiency, precision, and reliability. This paper explores the pivotal role of Programmable Logic Controllers (PLCs) and their associated Ladder Logic programming language in simplifying and streamlining industrial control systems. Ladder Logic, inspired by traditional relay control diagrams, provides a user-friendly, visual approach to programming that bridges the gap between electrical engineers and digital automation. By examining real-world applications, advantages, and best practices, this study highlights how PLCs and Ladder Logic enhance operational control, reduce downtime, and offer scalable solutions for complex automation tasks. The discussion also addresses emerging trends and future prospects, reinforcing Ladder Logic's continued relevance in evolving industrial landscapes. &lt;/div&gt; &lt;div&gt;  &lt;br&gt; &lt;/div&gt; &lt;div&gt;  &lt;br&gt; &lt;/div&gt; &lt;div&gt;  &lt;br&gt; &lt;/div&gt;",
+    "url": "https://doi.org/10.2139/ssrn.5258363",
+    "doi": "10.2139/ssrn.5258363",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM-assisted industrial automation programming ladder logic generation",
+    "citation_id": "S7"
+  },
+  "S8": {
+    "title": "LLM-Assisted Signal Temporal Logic Generation for Fault Detection in Cyber-Physical Systems",
+    "year": 2026,
+    "authors": "Thomas Ederer, Philipp Zech, Gernot Steindl",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1109/etfa68377.2026.11725269",
+    "doi": "10.1109/etfa68377.2026.11725269",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM-assisted industrial automation programming ladder logic generation",
+    "citation_id": "S8"
+  },
+  "S9": {
+    "title": "Retargetable Self-Test Program Generation Using Constraint Logic Programming",
+    "year": 1995,
+    "authors": "Ulrich Bieker",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1109/dac.1995.250018",
+    "doi": "10.1109/dac.1995.250018",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM-assisted industrial automation programming ladder logic generation",
+    "citation_id": "S9"
+  },
+  "S10": {
+    "title": "Training LLMs for Generating IEC 61131-3 Structured Text with Online Feedback",
+    "year": 2025,
+    "authors": "Aaron Haag, Bertram Fuchs, Altay Kacan, Oliver Lohse",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1109/llm4code66737.2025.00013",
+    "doi": "10.1109/llm4code66737.2025.00013",
+    "source_type": "Crossref 实时检索",
+    "keywords": "large language model PLC code generation IEC 61131-3 structured text",
+    "citation_id": "S10"
+  },
+  "S11": {
+    "title": "The Post Language: Process-Oriented Extension for IEC 61131-3 Structured Text",
+    "year": 2020,
+    "authors": "Vladislav Bashev, Igor Anureev, Vladimir Zyubin",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1109/rusautocon49822.2020.9208049",
+    "doi": "10.1109/rusautocon49822.2020.9208049",
+    "source_type": "Crossref 实时检索",
+    "keywords": "large language model PLC code generation IEC 61131-3 structured text",
+    "citation_id": "S11"
+  },
+  "S12": {
+    "title": "Grammar-Based Testing a Process-Oriented Extension of the IEC 61131-3 Structured Text Language",
+    "year": 2022,
+    "authors": "Sergey M. Staroletov",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1109/rusautocon54946.2022.9896346",
+    "doi": "10.1109/rusautocon54946.2022.9896346",
+    "source_type": "Crossref 实时检索",
+    "keywords": "large language model PLC code generation IEC 61131-3 structured text",
+    "citation_id": "S12"
+  },
+  "S13": {
+    "title": "Re-use of IEC 61131-3 Structured Text for IEC 61499",
+    "year": 2012,
+    "authors": "M. Wenger, A. Zoitl",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1109/icit.2012.6209917",
+    "doi": "10.1109/icit.2012.6209917",
+    "source_type": "Crossref 实时检索",
+    "keywords": "large language model PLC code generation IEC 61131-3 structured text",
+    "citation_id": "S13"
+  }
+}

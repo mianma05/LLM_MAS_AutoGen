@@ -1,0 +1,150 @@
+{
+  "S1": {
+    "title": "Agents4PLC: Automating Closed-loop PLC Code Generation and Verification",
+    "year": 2024,
+    "authors": "Agents4PLC authors",
+    "summary_cn": "用检索、规划、编码、验证和调试 Agent 构成 PLC 代码生成与验证闭环。",
+    "keywords": "PLC code generation verification LLM agents industrial control",
+    "url": "https://arxiv.org/abs/2410.14209",
+    "source_type": "课程资料库",
+    "citation_id": "S1"
+  },
+  "S2": {
+    "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+    "year": 2023,
+    "authors": "Wu et al.",
+    "summary_cn": "介绍通过多智能体对话构建 LLM 应用的方法，支持工具、人工介入和不同对话模式。",
+    "keywords": "AutoGen multi-agent conversation tools human-in-the-loop",
+    "url": "https://arxiv.org/abs/2308.08155",
+    "source_type": "课程资料库",
+    "citation_id": "S2"
+  },
+  "S3": {
+    "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+    "year": 2023,
+    "authors": "Hong et al.",
+    "summary_cn": "提出面向软件开发的多智能体框架，用角色分工和结构化产物组织协作流程。",
+    "keywords": "LLM multi-agent framework roles software development workflow",
+    "url": "https://arxiv.org/abs/2308.00352",
+    "source_type": "课程资料库",
+    "citation_id": "S3"
+  },
+  "S4": {
+    "title": "AFlow: Automating Agentic Workflow Generation",
+    "year": 2024,
+    "authors": "Zhang et al.",
+    "summary_cn": "将 Agent 工作流表示为可搜索结构，并利用执行反馈自动改进工作流。",
+    "keywords": "agentic workflow search execution feedback",
+    "url": "https://arxiv.org/abs/2410.10762",
+    "source_type": "课程资料库",
+    "citation_id": "S4"
+  },
+  "S5": {
+    "title": "GPTSwarm: Language Agents as Optimizable Graphs",
+    "year": 2024,
+    "authors": "Zhuge et al.",
+    "summary_cn": "把语言 Agent 表示为可组合、可优化的图结构，研究节点和连接的优化。",
+    "keywords": "GPTSwarm language agents graph optimization",
+    "url": "https://arxiv.org/abs/2402.16823",
+    "source_type": "课程资料库",
+    "citation_id": "S5"
+  },
+  "S6": {
+    "title": "Model Context Protocol: What is MCP?",
+    "year": 2025,
+    "authors": "Model Context Protocol authors",
+    "summary_cn": "介绍连接 AI 应用与外部数据源、资源和工具的开放协议。",
+    "keywords": "MCP tools data resources protocol",
+    "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+    "source_type": "课程资料库",
+    "citation_id": "S6"
+  },
+  "S7": {
+    "title": "Comparative Study of Ladder Logic and Structured Text Programming for PLC",
+    "year": 2025,
+    "authors": "Vaibhav Vilas Godase",
+    "summary_cn": "This research presents a comprehensive comparative study between ladder logic (LD) and structured text (ST), two prominent programming languages standardized under IEC 61131-3 for programmable logic controllers (PLCs). The study investigates their performance in terms of execution efficiency, readability, debugging time, and maintainability across diverse industrial applications. Data was collected over 12 months from 15 real-world installations using platforms like Siemens S7-1500 and Allen-Bradley Control Logix, and software environments such as TIA Portal and Studio 5000. The findings indicate that LD excels in simple logic operations and rapid development, particularly for electrical professionals familiar with relay logic, whereas ST demonstrates superior performance in complex computations, memory efficiency, and structured data manipulation. ST also offers better maintainability through modularity and code reusability, making it more suitable for large-scale or algorithm-intensive projects. In debugging scenarios, LD proves more effective for logic and I/O issues due to its visual nature, while ST provides better tools for diagnosing communication and calculation errors. A hybrid programming strategy is recommended, leveraging LD for I/O control and safety interlocks, and ST for data processing and algorithmic functions. The study further emphasizes the importance of team composition and training, suggesting that project success often hinges on aligning language choice with developer background and application complexity. By evaluating both qualitative and quantitative parameters, this research provides actionable insights into optimizing PLC programming practices for modern industrial automation.",
+    "url": "https://doi.org/10.2139/ssrn.5383802",
+    "doi": "10.2139/ssrn.5383802",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM-assisted PLC code generation structured text ladder logic large language model industrial automation programming",
+    "citation_id": "S7"
+  },
+  "S8": {
+    "title": "Applied Industrial Automation with Delta PLC: Programming, Ladder Logic, and Control Systems",
+    "year": 2025,
+    "authors": "T. Jones Daniel, J. Bercy Miraclin",
+    "summary_cn": "This book is a journey into the world of technology, a journey designed for every higher secondary student who believes that education is power and a tool to spread equality. In an era where technology shapes our future, understanding the foundational concepts of Automation, Mechatronics, IoT, Information Technology, AI, and Machine Learning is not merely an advantage – it is an imperative. This book aims to equip you with that understanding, opening doors to innovation and opportunity for everyone.  Practical knowledge is emphasized in this book. It is built on the principle that true learning comes from \"doing\" rather than just passively receiving information. You'll find explanations coupled with practically executed examples, designed to foster a deeper and more intuitive understanding of complex concepts. The goal is to make this material accessible by breaking down potentially intimidating topics into manageable and engaging learning experiences.  Whether your ambition lies in designing intelligent systems, building robotic marvels, or simply understanding the digital world around you, this book provides a solid foundation. The hope is that through these pages, readers will gain valuable knowledge and discover the passion and potential that lies within the ever-evolving world of technology, becoming empowered to shape a more equitable and technologically advanced future for all.",
+    "url": "https://doi.org/10.70593/978-93-7185-999-8",
+    "doi": "10.70593/978-93-7185-999-8",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM-assisted PLC code generation structured text ladder logic large language model industrial automation programming",
+    "citation_id": "S8"
+  },
+  "S9": {
+    "title": "Automation Simplified: The Power of PLC Ladder Logic in Industrial Control Systems",
+    "year": 2025,
+    "authors": "Mark Louie Morelos",
+    "summary_cn": "&lt;br&gt; &lt;div&gt;  &lt;br&gt; &lt;/div&gt; &lt;div&gt;  In the era of Industry 4.0, automation has become the backbone of modern industrial processes, enabling efficiency, precision, and reliability. This paper explores the pivotal role of Programmable Logic Controllers (PLCs) and their associated Ladder Logic programming language in simplifying and streamlining industrial control systems. Ladder Logic, inspired by traditional relay control diagrams, provides a user-friendly, visual approach to programming that bridges the gap between electrical engineers and digital automation. By examining real-world applications, advantages, and best practices, this study highlights how PLCs and Ladder Logic enhance operational control, reduce downtime, and offer scalable solutions for complex automation tasks. The discussion also addresses emerging trends and future prospects, reinforcing Ladder Logic's continued relevance in evolving industrial landscapes. &lt;/div&gt; &lt;div&gt;  &lt;br&gt; &lt;/div&gt; &lt;div&gt;  &lt;br&gt; &lt;/div&gt; &lt;div&gt;  &lt;br&gt; &lt;/div&gt;",
+    "url": "https://doi.org/10.2139/ssrn.5258363",
+    "doi": "10.2139/ssrn.5258363",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM-assisted PLC code generation structured text ladder logic large language model industrial automation programming",
+    "citation_id": "S9"
+  },
+  "S10": {
+    "title": "Pengaruh Integrasi Large Language Model (LLM) Assisted Code Generation terhadap Defect Density dan Produktivitas Pengembang dalam Metodologi Agile Extreme Programming",
+    "year": 2026,
+    "authors": "Joko Yuwono",
+    "summary_cn": "Penggunaan Large Language Model (LLM) sebagai alat bantu generasi kode (code generation) semakin meluas dalam industri pengembangan perangkat lunak global, namun penelitian empiris yang mengkaji dampaknya terhadap kualitas kode dan produktivitas pengembang dalam konteks metodologi Agile khususnya Extreme Programming (XP) masih sangat terbatas, terutama di Indonesia. Penelitian ini bertujuan untuk mengukur pengaruh integrasi LLM-assisted code generation terhadap dua variabel utama: defect density (jumlah cacat per 1.000 baris kode) dan produktivitas pengembang (diukur melalui lines of code per jam, waktu penyelesaian fitur, dan waktu perbaikan defect). Desain penelitian menggunakan pendekatan eksperimen kuasi dengan dua kelompok tim pengembang: kelompok eksperimen yang menggunakan GitHub Copilot berbasis GPT-4 Turbo sebagai alat LLM, dan kelompok kontrol yang mengembangkan sistem secara manual tanpa bantuan LLM. Kedua kelompok mengerjakan proyek sistem informasi berbasis web dengan kompleksitas setara menggunakan metodologi XP selama delapan minggu. Hasil penelitian menunjukkan bahwa tim yang mengintegrasikan LLM menghasilkan defect density sebesar 0,87 per KLOC, lebih rendah secara signifikan dibandingkan kelompok kontrol yang mencapai 1,62 per KLOC (penurunan 46,3%). Produktivitas pengembang pada kelompok LLM juga meningkat rata-rata 38,2% dalam hal lines of code per jam dan 31,5% lebih cepat dalam menyelesaikan fitur. Temuan ini memberikan bukti empiris bahwa integrasi LLM dalam siklus Extreme Programming secara statistik signifikan meningkatkan kualitas kode sekaligus produktivitas pengembang, dengan catatan bahwa praktik code review manusia tetap diperlukan untuk mengatasi kerentanan keamanan pada kode yang dihasilkan AI.",
+    "url": "https://doi.org/10.62712/juktisi.v5i1.1070",
+    "doi": "10.62712/juktisi.v5i1.1070",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM-assisted PLC code generation structured text ladder logic large language model industrial automation programming",
+    "citation_id": "S10"
+  },
+  "S11": {
+    "title": "Shifting from closed-source graphical-interface to open-source programming environment: a brief tutorial on running Maxent in R",
+    "year": 2017,
+    "authors": "Xiao Feng, Fikirte Gebresenbet, Cassondra Walker",
+    "summary_cn": "Ecological niche modeling (ENM) is increasingly being used in studying the relationship between species distributions and environmental conditions. The development of ENM software/algorithms is heading toward open-source programming, for the advantage of efficiency in handling big data and incorporating new methods. Maxent is one of the commonly used ENM algorithms, but there has been limited information and efforts in implementing Maxent in an open-source programming environment (e.g., R). Therefore, we aim to fill the gap of knowledge for using Maxent in R. More specifically, we demonstrate the general implementation of Maxent in R based on a commonly used ENM procedure, provide a function that bridges the Maxent algorithm and R computing environment for easier use, and demonstrate the manipulation of a few crucial Maxent parameters in R. We expect our efforts will promote a shift of the Maxent user community from a graphical-interface to open-source programming.",
+    "url": "https://doi.org/10.7287/peerj.preprints.3346v1",
+    "doi": "10.7287/peerj.preprints.3346v1",
+    "source_type": "Crossref 实时检索",
+    "keywords": "Copilot PLC programming case study benchmark open-source prototype course materials tutorial",
+    "citation_id": "S11"
+  },
+  "S12": {
+    "title": "Evaluation of Interaction Design of Virtual Laboratory of Open Source Programming in Virtual Classroom Based On Moodle Using DECIDE Framework Case Study: C programming",
+    "year": 2020,
+    "authors": "Azizah Zakiah",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.37200/ijpr/v24i2/pr200708",
+    "doi": "10.37200/ijpr/v24i2/pr200708",
+    "source_type": "Crossref 实时检索",
+    "keywords": "Copilot PLC programming case study benchmark open-source prototype course materials tutorial",
+    "citation_id": "S12"
+  },
+  "S13": {
+    "title": "EXPLORING GITHUB COPILOT ASSISTANCE FOR WORKING WITH CLASSES IN A PROGRAMMING COURSE",
+    "year": 2023,
+    "authors": "",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.48009/4_iis_2023_106",
+    "doi": "10.48009/4_iis_2023_106",
+    "source_type": "Crossref 实时检索",
+    "keywords": "Copilot PLC programming case study benchmark open-source prototype course materials tutorial",
+    "citation_id": "S13"
+  },
+  "S14": {
+    "title": "Global Property Prediction: A Benchmark Study on Open-Source Perovskite-like Datasets",
+    "year": null,
+    "authors": "",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1021/acsomega.1c00991.s001",
+    "doi": "10.1021/acsomega.1c00991.s001",
+    "source_type": "Crossref 实时检索",
+    "keywords": "Copilot PLC programming case study benchmark open-source prototype course materials tutorial",
+    "citation_id": "S14"
+  }
+}

@@ -1,124 +1,129 @@
-# AutoGen 多智能体技术调研助手
+# LLM-based Multi-Agent System for Technical Research (with PLC Code Generation & Verification)
 
-这是一个面向课程教学的 LLM-based 多智能体案例。学生输入一个技术主题，多个 Agent 协作检索资料、写作，并在提高版中审阅和修订报告。
+This repository is a course project for the *Agent & MAS* course. It contains a small
+LLM-based multi-agent system (MAS) built on **Microsoft AutoGen** (AgentChat API) that turns
+a research topic into a cited technical report. On top of the original implementation, this
+repository adds a **PLC code generation + deterministic verification loop** as an improvement.
 
-案例基于 Microsoft AutoGen 的 AgentChat API，使用 OpenAI 兼容接口。本项目默认适配火山引擎 Ark Coding API，也可以替换为其他兼容服务。
+The project uses any OpenAI-compatible chat-completion API. By default it is configured for
+DeepSeek (`deepseek-chat`), but it also works with Volcano Engine Ark or OpenAI.
 
-## 两个版本
+## The three programs
 
-### 基础版 `basic.py`
+| Script | Architecture | Description |
+|---|---|---|
+| `basic.py` | `PlannerAgent → SearchAgent → WriterAgent` | Fixed sequential pipeline (RoundRobinGroupChat). |
+| `advanced.py` | `+ ReviewerAgent` (SelectorGroupChat) | Adds a review step and one allowed revision loop. |
+| `improved.py` | `advanced.py` + `CodeGeneratorAgent → CodeVerifierAgent` | **Improvement**: after the research report is approved, generates an IEC 61131-3 Structured Text (ST) code example and verifies it with a deterministic tool. |
 
-流程固定为：
+### Original flow (basic / advanced)
 
-```text
-PlannerAgent → SearchAgent → WriterAgent
+```
+PlannerAgent  →  SearchAgent  →  WriterAgent  →  ReviewerAgent
+                                  (search_literature)   ↘ needs revision → back to WriterAgent
 ```
 
-学生可以观察固定顺序的消息传递、工具调用和报告生成。
+- `PlannerAgent` splits the topic into 2–3 concrete search questions.
+- `SearchAgent` calls the real tool `search_literature` (course source library + Crossref).
+- `WriterAgent` writes a 500–700 word cited report using `[S#]` evidence numbers.
+- `ReviewerAgent` (advanced only) checks citation–evidence consistency and requests at most one revision.
 
-### 提高版 `advanced.py`
+### Improved flow (`improved.py`)
 
-流程增加审阅和一次修订：
+```
+Stage 1 (research, reuse advanced.build_team):
+  PlannerAgent → SearchAgent → WriterAgent → ReviewerAgent  (up to 1 revision)
 
-```text
-PlannerAgent → SearchAgent → WriterAgent → ReviewerAgent
-                                      ↘ 需要修改时回到 WriterAgent
+Stage 2 (code generation & verification, NEW):
+  CodeGeneratorAgent → CodeVerifierAgent
+                          (check_st_code, a deterministic ST static checker)
+                            ↳ FAIL → back to CodeGeneratorAgent (up to 1 revision)
+                            ↳ PASS → stop
 ```
 
-提高版使用 `SelectorGroupChat`，由一个简单的路由函数根据消息来源和审阅结果选择下一位 Agent。审阅 Agent 还会检查报告中的 `[S1]` 引用是否来自本次检索结果。
+The new components are:
 
-## 快速开始
+- **`CodeGeneratorAgent`** — generates a demo IEC 61131-3 ST program (motor start/stop with
+  an emergency-stop safety interlock and a `TON` delay timer) based on the research findings.
+- **`CodeVerifierAgent`** — calls the new deterministic tool `check_st_code` on the generated code.
+- **`check_st_code`** (in `plc_tools.py`) — a *real* tool (no LLM): it strips comments and checks
+  (1) keyword pairing balance (`IF/END_IF`, `PROGRAM/END_PROGRAM`, ...), (2) bracket balance, and
+  (3) the common LLM mistake of using `=` instead of `:=` for assignment. It returns a `PASS`/`FAIL`
+  report. The `FAIL` result deterministically drives the revision loop.
 
-需要 Python 3.11 或更高版本。
+## Setup
 
-### 1. 创建虚拟环境并安装依赖
-
-Windows PowerShell：
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-```
-
-macOS 或 Linux：
+Requirements: **Python 3.11+** (tested on 3.13).
 
 ```bash
-python3 -m venv .venv
+python -m venv .venv
+# Windows PowerShell:
+.\.venv\Scripts\Activate.ps1
+# macOS / Linux:
 source .venv/bin/activate
+
 pip install -r requirements.txt
 ```
 
-### 2. 配置接口
+## Configure the API
 
-复制 `.env.example` 为 `.env`，填写自己的 `ARK_API_KEY`。本项目不会把密钥写入运行结果。
+Copy `.env.example` to `.env` and fill in an OpenAI-compatible key. For DeepSeek:
 
-默认配置为：
-
-```text
-LLM_BASE_URL=https://ark.cn-beijing.volces.com/api/coding/v3
-LLM_MODEL=doubao-seed-2-1-turbo-260628
+```ini
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxx
+LLM_BASE_URL=https://api.deepseek.com
+LLM_MODEL=deepseek-chat
+LLM_MAX_TOKENS=1800
+LLM_TEMPERATURE=0.2
 ```
 
-先检查接口：
+> Use `deepseek-chat` (not `deepseek-reasoner`): the MAS relies on function calling, which the
+> reasoning model does not support. The `.env` file is git-ignored — never commit real keys.
 
-```powershell
+Verify the connection:
+
+```bash
 python check_api.py
 ```
 
-### 3. 运行基础版
+## Run
 
-```powershell
-python basic.py --topic "LLM-based multi-agent systems in industrial control"
+All three programs take a `--topic` argument and write a fresh directory under `outputs/`.
+
+```bash
+# Task 1 — original MAS
+python basic.py    --topic "LLM-assisted PLC code generation and industrial automation programming"
+python advanced.py --topic "LLM-assisted PLC code generation and industrial automation programming"
+
+# Task 2 — improved MAS
+python improved.py --topic "LLM-assisted PLC code generation and industrial automation programming"
 ```
 
-### 4. 运行提高版
+### Outputs
 
-```powershell
-python advanced.py --topic "LLM-based multi-agent systems in industrial control"
-```
+Every run produces (in `outputs/<kind>_<timestamp>/`):
 
-每次运行会在 `outputs/` 下生成独立目录，包含：
+- `report.md` — final report.
+- `trace.jsonl` — full message + tool-call trace (for log interpretation).
+- `evidence_registry.json` — the `[S#]` → source mapping used in this run.
+- `run_summary.json` — run settings (no secrets) and revision counts.
 
-- `report.md`：最终中文技术报告
-- `trace.jsonl`：完整消息和工具调用轨迹
-- `evidence_registry.json`：本次运行使用的证据编号
-- `run_summary.json`：不含密钥的运行配置
-- 提高版另有 `review.md`：审阅意见和引用复核结果
+`advanced.py` additionally writes `review.md`; `improved.py` additionally writes
+`generated_code.st` (the verified ST code) and `verification.md` (the tool-check result and a
+deterministic re-check).
 
-## 工具和资料来源
+## Screenshots
 
-`research_tools.py` 提供两个来源：
+`/screenshots` contains PNG snapshots of the run logs and key output files for Task 1 and Task 2.
 
-1. 项目内的 `data/course_sources.json`，保证课堂演示至少有一组稳定资料。
-2. Crossref 实时检索，不需要额外密钥。Crossref 可能没有摘要，代码会如实标注，不会把标题当成摘要。
+## Tools & data sources
 
-如果实时检索失败，报告仍可以使用课程资料库；完整结果会在 `trace.jsonl` 中显示。
+`research_tools.py` provides two sources: a bundled course source library
+(`data/course_sources.json`) and a live Crossref search (no extra key required).
 
-## 与课程内容的对应关系
+## Notes
 
-| 课程概念 | 案例中的位置 |
-|---|---|
-| Agent | Planner、Searcher、Writer、Reviewer 各自负责一个目标 |
-| Harness | AutoGen 的消息循环、工具调用、终止条件和重试 |
-| MAS | 多个有明确角色的 Agent 共享任务上下文 |
-| 工具调用 | `search_literature` 和 `audit_citations` |
-| 工作流 | 基础版固定顺序，提高版带条件回路 |
-| 可靠性 | 引用编号、审阅、最大轮数和人工复核 |
-
-本案例不要求学生自己实现 MCP 或 A2A。协议可以作为课堂讨论的工程扩展，基础作业先把 Agent 分工、消息路由、工具和验证做清楚。
-
-## 官方参考
-
-- [AutoGen AgentChat 文档](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/)
-- [AutoGen Literature Review 示例](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/examples/literature-review.html)
-- [AutoGen Selector Group Chat 示例](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/selector-group-chat.html)
-- [Crossref REST API](https://api.crossref.org/swagger-ui/index.html)
-
-## 注意事项
-
-- 不要把真实 API 密钥写进代码、README 或 Git 仓库。
-- 建议先用一个具体主题测试，再扩大检索范围。
-- 提高版最多允许一次修订，并设置最大轮数，防止 Agent 无限对话。
-- LLM 生成的报告仍需要人工检查，尤其是引用、数字和因果结论。
-- AutoGen 和模型服务都会更新，课程发布时请固定依赖版本并保留本 README。
+- Do not commit real API keys.
+- The reports are LLM-generated and still need human review, especially for citations, numbers
+  and causal claims.
+- AutoGen and model services change over time; pin the dependency versions in `requirements.txt`.

@@ -1,0 +1,160 @@
+{
+  "S1": {
+    "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+    "year": 2023,
+    "authors": "Hong et al.",
+    "summary_cn": "提出面向软件开发的多智能体框架，用角色分工和结构化产物组织协作流程。",
+    "keywords": "LLM multi-agent framework roles software development workflow",
+    "url": "https://arxiv.org/abs/2308.00352",
+    "source_type": "课程资料库",
+    "citation_id": "S1"
+  },
+  "S2": {
+    "title": "Agents4PLC: Automating Closed-loop PLC Code Generation and Verification",
+    "year": 2024,
+    "authors": "Agents4PLC authors",
+    "summary_cn": "用检索、规划、编码、验证和调试 Agent 构成 PLC 代码生成与验证闭环。",
+    "keywords": "PLC code generation verification LLM agents industrial control",
+    "url": "https://arxiv.org/abs/2410.14209",
+    "source_type": "课程资料库",
+    "citation_id": "S2"
+  },
+  "S3": {
+    "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+    "year": 2023,
+    "authors": "Wu et al.",
+    "summary_cn": "介绍通过多智能体对话构建 LLM 应用的方法，支持工具、人工介入和不同对话模式。",
+    "keywords": "AutoGen multi-agent conversation tools human-in-the-loop",
+    "url": "https://arxiv.org/abs/2308.08155",
+    "source_type": "课程资料库",
+    "citation_id": "S3"
+  },
+  "S4": {
+    "title": "AFlow: Automating Agentic Workflow Generation",
+    "year": 2024,
+    "authors": "Zhang et al.",
+    "summary_cn": "将 Agent 工作流表示为可搜索结构，并利用执行反馈自动改进工作流。",
+    "keywords": "agentic workflow search execution feedback",
+    "url": "https://arxiv.org/abs/2410.10762",
+    "source_type": "课程资料库",
+    "citation_id": "S4"
+  },
+  "S5": {
+    "title": "A survey on LLM-based multi-agent systems",
+    "year": 2024,
+    "authors": "Li et al.",
+    "summary_cn": "从工作流、基础设施、通信和挑战等角度总结 LLM-based 多智能体系统。",
+    "keywords": "LLM-based multi-agent systems survey workflow infrastructure challenges",
+    "url": "https://link.springer.com/article/10.1007/s44336-024-00009-2",
+    "source_type": "课程资料库",
+    "citation_id": "S5"
+  },
+  "S6": {
+    "title": "GPTSwarm: Language Agents as Optimizable Graphs",
+    "year": 2024,
+    "authors": "Zhuge et al.",
+    "summary_cn": "把语言 Agent 表示为可组合、可优化的图结构，研究节点和连接的优化。",
+    "keywords": "GPTSwarm language agents graph optimization",
+    "url": "https://arxiv.org/abs/2402.16823",
+    "source_type": "课程资料库",
+    "citation_id": "S6"
+  },
+  "S7": {
+    "title": "Model Context Protocol: What is MCP?",
+    "year": 2025,
+    "authors": "Model Context Protocol authors",
+    "summary_cn": "介绍连接 AI 应用与外部数据源、资源和工具的开放协议。",
+    "keywords": "MCP tools data resources protocol",
+    "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+    "source_type": "课程资料库",
+    "citation_id": "S7"
+  },
+  "S8": {
+    "title": "[PDF] The Book of CODESYS: The ultimate guide to PLC and Industrial Controls programming with the CODESYS IDE and IEC 61131-3. by",
+    "year": 2026,
+    "authors": "Stevie Grassetti",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.55277/researchhub.38w79nkj.1",
+    "doi": "10.55277/researchhub.38w79nkj.1",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM industrial automation programming workflow CODESYS TIA Portal integration",
+    "citation_id": "S8"
+  },
+  "S9": {
+    "title": "The Book of CODESYS: The ultimate guide to PLC and Industrial Controls programming with the CODESYS IDE and IEC 61131-3. by  on Ipad",
+    "year": 2026,
+    "authors": "Stanley Mistretta",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.55277/researchhub.hlibv5uq.1",
+    "doi": "10.55277/researchhub.hlibv5uq.1",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM industrial automation programming workflow CODESYS TIA Portal integration",
+    "citation_id": "S9"
+  },
+  "S10": {
+    "title": "PDF/EPUB Download The Book of CODESYS: The ultimate guide to PLC and Industrial Controls programming with the CODESYS IDE and IEC 61131-3. by  Full Book",
+    "year": 2026,
+    "authors": "Irene Miller",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.55277/researchhub.lc90x7xz.1",
+    "doi": "10.55277/researchhub.lc90x7xz.1",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM industrial automation programming workflow CODESYS TIA Portal integration",
+    "citation_id": "S10"
+  },
+  "S11": {
+    "title": "The preparation of process automation in SIEMENS TIA Portal environment",
+    "year": 2016,
+    "authors": "Michał Sobiepański, Michał Tagowski",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.17814/mechanik.2016.7.188",
+    "doi": "10.17814/mechanik.2016.7.188",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM industrial automation programming workflow CODESYS TIA Portal integration",
+    "citation_id": "S11"
+  },
+  "S12": {
+    "title": "Meeting SIL requirements: SIL verification",
+    "year": 2023,
+    "authors": "Peter Clarke",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1016/b978-0-443-15230-6.00014-8",
+    "doi": "10.1016/b978-0-443-15230-6.00014-8",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM generated PLC code safety verification hallucination formal verification functional safety SIL",
+    "citation_id": "S12"
+  },
+  "S13": {
+    "title": "Constructing a Safety Case for Automatically Generated Code from Formal Program Verification Information",
+    "year": null,
+    "authors": "Nurlida Basir, Ewen Denney, Bernd Fischer",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.1007/978-3-540-87698-4_22",
+    "doi": "10.1007/978-3-540-87698-4_22",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM generated PLC code safety verification hallucination formal verification functional safety SIL",
+    "citation_id": "S13"
+  },
+  "S14": {
+    "title": "Formal verification of spiral generated code",
+    "year": null,
+    "authors": "Patrick J. Brinich, Jeremy Russell Johnson",
+    "summary_cn": "This thesis formally verifies a subset of SPIRAL, an efficient code generation system for digital signal processing algorithms and related computations. The thesis focuses on algorithms for fast signal transforms. SPIRAL represents algorithms for linear transforms as sparse matrix factorizations using a domain specific language called the Signal Processing Language (SPL). An SPL expression representing a signal transform algorithm is obtained by repeated application of factorization and matrix identities. Such an SPL expression can then be compiled to some target language. The rules used for generating these algorithms as well as an SPL compiler targeting a simple imperative language with arrays and values from a commutative ring, IMP+V, are verified. The Coq proof assistant is used to create a deep embedding of SPL expressions and a formal definition of the algorithm generation rules. Each SPL expression can be evaluated to a matrix, and applying any algorithm generation rules to an SPL expression should produce a new SPL expression that evaluates to the same matrix. A theory of matrices in developed in Coq in order to formally express this matrix equivalence and prove that the algorithm generation process is correct. Finally, the syntax and semantics of IMP+V are defined in Coq. Hoare logic is used to verify parameterized IMP+V code fragments that are used to build an SPL to IMP+V compiler. This compiler is verified by showing that any IMP+V program compiled from a given SPL expression must apply that SPL expression's matrix to its input vector. Using this machinery, a formal proof of correctness of the fast Fourier transform (FFT) and related transforms is obtained.",
+    "url": "https://doi.org/10.17918/00000310",
+    "doi": "10.17918/00000310",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM generated PLC code safety verification hallucination formal verification functional safety SIL",
+    "citation_id": "S14"
+  },
+  "S15": {
+    "title": "Verifying LLM-Generated Code in the Context of Software Verification with Ada/SPARK",
+    "year": 2025,
+    "authors": "Marcos Cramer, Lucian McIntyre",
+    "summary_cn": "Crossref 未提供摘要，请打开原文核对。",
+    "url": "https://doi.org/10.5220/0013461900003964",
+    "doi": "10.5220/0013461900003964",
+    "source_type": "Crossref 实时检索",
+    "keywords": "LLM generated PLC code safety verification hallucination formal verification functional safety SIL",
+    "citation_id": "S15"
+  }
+}
